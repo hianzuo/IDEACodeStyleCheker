@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+
+    <code-fragment id="method-parameter-count-rule">
+        <![CDATA[
+    package org.p3c.demo;
+
+    public class Demo {
+
+        public void methodA(int a) {
+        }
+
+        public void methodB(int a, int b, int c, int d, int e) {
+        }
+    }
+        ]]>
+    </code-fragment>
+    <test-code>
+        <!-- 预期问题个数 -->
+        <expected-problems>1</expected-problems>
+        <description>method-parameter-count-rule</description>
+        <code-ref id="method-parameter-count-rule" />
+    </test-code>
+</test-data>

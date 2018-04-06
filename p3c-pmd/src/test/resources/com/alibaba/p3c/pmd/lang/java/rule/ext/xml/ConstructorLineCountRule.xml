@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+
+    <code-fragment id="constructor-line-count-rule">
+        <![CDATA[
+    package org.p3c.demo;
+
+    public class Demo {
+         public Demo(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         }
+    }
+        ]]>
+    </code-fragment>
+    <test-code>
+        <expected-problems>1</expected-problems>
+        <description>constructor-line-count-rule</description>
+        <code-ref id="constructor-line-count-rule" />
+    </test-code>
+</test-data>

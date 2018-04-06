@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+
+    <code-fragment id="code-column-count-rule">
+        <![CDATA[
+    package org.p3c.demo;
+
+    public class Demo {
+        int                                                                                                                b;
+    }
+        ]]>
+    </code-fragment>
+    <test-code>
+        <expected-problems>1</expected-problems>
+        <description>code-column-count-rule</description>
+        <code-ref id="code-column-count-rule" />
+    </test-code>
+</test-data>

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<ruleset name="AlibabaJavaOop" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+
+    <rule name="MethodParameterCountRule"
+          language="java"
+          message="java.oop.MethodParameterCountRule.rule.msg"
+          class="com.alibaba.p3c.pmd.lang.java.rule.ext.MethodParameterCountRule">
+        <!--级别，1强制，2推荐，3参考-->
+        <priority>2</priority>
+
+        <example>
+            <![CDATA[
+Negative example:
+    public void methodB(int a, int b, int c, int d, int e) {
+    }
+]]>
+        </example>
+        <example>
+            <![CDATA[
+Positive example:
+    public void methodA() {
+    }
+]]>
+        </example>
+    </rule>
+
+    <rule name="MethodLineCountRule"
+          language="java"
+          message="java.oop.MethodLineCountRule.rule.msg"
+          class="com.alibaba.p3c.pmd.lang.java.rule.ext.MethodLineCountRule">
+        <!--级别，1强制，2推荐，3参考-->
+        <priority>2</priority>
+
+        <example>
+            <![CDATA[
+Negative example:
+    public void methodB() {
+       //其中代码超过30行
+    }
+]]>
+        </example>
+        <example>
+            <![CDATA[
+Positive example:
+    public void methodA() {
+        int a1;
+    }
+]]>
+        </example>
+    </rule>
+
+    <rule name="CodeColumnCountRule"
+          language="java"
+          message="java.oop.CodeColumnCountRule.rule.msg"
+          class="com.alibaba.p3c.pmd.lang.java.rule.ext.CodeColumnCountRule">
+        <!--级别，1强制，2推荐，3参考-->
+        <priority>2</priority>
+
+        <example>
+            <![CDATA[
+Negative example:
+    Integer                                                                                                              variableA;
+]]>
+        </example>
+        <example>
+            <![CDATA[
+Positive example:
+    Integer variableA;
+]]>
+        </example>
+    </rule>
+    <rule name="ConstructorLineCountRule"
+          language="java"
+          message="java.oop.ConstructorLineCountRule.rule.msg"
+          class="com.alibaba.p3c.pmd.lang.java.rule.ext.ConstructorLineCountRule">
+        <!--级别，1强制，2推荐，3参考-->
+        <priority>1</priority>
+        <example>
+            <![CDATA[
+Negative example:
+     public class DemoDO {
+        public DemoDO(){
+            //其中代码超过30行
+        }
+    }
+]]>
+        </example>
+        <example>
+            <![CDATA[
+Positive example:
+   public class DemoDO {
+        public DemoDO(){
+        }
+    }
+]]>
+        </example>
+    </rule>
+</ruleset>

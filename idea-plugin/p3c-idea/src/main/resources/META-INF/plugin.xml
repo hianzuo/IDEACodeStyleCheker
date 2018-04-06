@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.alibaba.p3c.smartfox.ext</id>
+    <name>Alibaba Ext Java Coding Guidelines</name>
+    <description>Alibaba Ext Java Coding Guidelines plugin support.</description>
+
+    <change-notes>
+        <![CDATA[
+          <ul>
+        1.0.1
+         <li>Support check method more than 5 parameter</li>
+         <li>support check method code more than 30 row code.</li>
+         <li>support check one row more than 120 character.</li>
+         <ul>
+        ]]>
+    </change-notes>
+    <vendor>ryan</vendor>
+    <version>1.0.0</version>
+    <idea-version since-build="141.0"/>
+    <depends optional="true">com.intellij.velocity</depends>
+    <depends optional="true" config-file="p3c.xml">com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>com.intellij.modules.xml</depends>
+    <depends>com.intellij.modules.xdebugger</depends>
+</idea-plugin>
