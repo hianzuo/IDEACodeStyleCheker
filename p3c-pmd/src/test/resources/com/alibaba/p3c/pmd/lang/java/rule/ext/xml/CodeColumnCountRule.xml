@@ -6,7 +6,9 @@
     package org.p3c.demo;
 
     public class Demo {
-        int                                                                                                                b;
+        public void a(){
+            String                                                                                                       a;
+        }
     }
         ]]>
     </code-fragment>

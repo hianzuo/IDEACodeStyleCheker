@@ -1,13 +1,13 @@
 <idea-plugin>
     <application-components>
         <component>
-            <implementation-class>com.alibaba.p3c.ext.idea.component.CommonSettingsApplicationComponent
+            <implementation-class>com.alibaba.p3c.idea.ext.component.CommonSettingsApplicationComponent
             </implementation-class>
         </component>
     </application-components>
     <project-components>
         <component>
-            <implementation-class>com.alibaba.p3c.ext.idea.component.AliProjectComponent</implementation-class>
+            <implementation-class>com.alibaba.p3c.idea.ext.component.AliProjectComponent</implementation-class>
         </component>
     </project-components>
     <actions>
@@ -41,13 +41,13 @@
 
     <extensionPoints>
         <extensionPoint name="inspectionAction"
-                        interface="com.alibaba.p3c.ext.idea.ep.InspectionActionExtensionPoint"/>
+                        interface="com.alibaba.p3c.idea.ext.ep.InspectionActionExtensionPoint"/>
     </extensionPoints>
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.alibaba.p3c.ext.idea.config.P3cConfig"/>
-        <projectService serviceImplementation="com.alibaba.p3c.ext.idea.config.SmartFoxProjectConfig"/>
-        <checkinHandlerFactory implementation="com.alibaba.p3c.ext.idea.vcs.AliCodeAnalysisCheckinHandlerFactory"
+        <applicationService serviceImplementation="com.alibaba.p3c.idea.ext.config.P3cConfig"/>
+        <projectService serviceImplementation="com.alibaba.p3c.idea.ext.config.SmartFoxProjectConfig"/>
+        <checkinHandlerFactory implementation="com.alibaba.p3c.idea.ext.vcs.AliCodeAnalysisCheckinHandlerFactory"
                                order="first"/>
-        <inspectionToolProvider implementation="com.alibaba.p3c.ext.idea.inspection.AliLocalInspectionToolProvider"/>
+        <inspectionToolProvider implementation="com.alibaba.p3c.idea.ext.inspection.AliLocalInspectionToolProvider"/>
     </extensions>
 </idea-plugin>
